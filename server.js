@@ -14,10 +14,7 @@ mongoose.connect(
     'mongodb://192.168.99.100:27017/nodeapi',
     {useNewUrlParser:true} 
 )
-
 requireDir('./src/models')
-
-
 
 //Rotas 
 app.use('/api',require('./src/routes'))

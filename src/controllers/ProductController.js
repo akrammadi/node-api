@@ -1,6 +1,5 @@
 const mongoose = require("mongoose")
 
-
 const Product = mongoose.model("Product")
 
 module.exports ={
@@ -15,7 +14,6 @@ module.exports ={
         
         return res.json(product)
     
-
     },
     async store(req,res){
         const product = await Product.create(req.body)
